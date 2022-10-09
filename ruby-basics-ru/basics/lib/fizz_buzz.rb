@@ -5,16 +5,17 @@ def fizz_buzz(x, y)
     if (x > y) 
         return
     end
-    (x..y).map do |num|
+    result = (x..y).map do |num|
         if num % 3 == 0 && num % 5 == 0
-              "FizzBuzz"
+            "FizzBuzz"
         elsif num % 3 == 0
-              "Fizz"
+            "Fizz"
         elsif num % 5 == 0
-              "Buzz"
+            "Buzz"
         else
-             num
+            num
        end
    end
+   result.join(' ')
 end
 # END
